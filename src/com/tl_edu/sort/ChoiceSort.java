@@ -9,7 +9,7 @@ public class ChoiceSort {
         if (nums.length == 0)
             return nums;
         for (int i = 0; i < nums.length; i++) {
-            int minIndex=i;/*最小数的下标，每个循环开始总是假设第一个数最小*/
+            int minIndex = i;/*最小数的下标，每个循环开始总是假设第一个数最小*/
             for (int j = i; j < nums.length; j++) {
                 if (nums[j] < nums[minIndex]) /*找到最小的数*/
                     minIndex = j; /*将最小数的索引保存*/
