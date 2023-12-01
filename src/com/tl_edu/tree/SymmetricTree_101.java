@@ -48,7 +48,7 @@ public class SymmetricTree_101 {
         Queue<TreeNode> q = new LinkedList<TreeNode>();
         TreeNode u = root.left;
         TreeNode v = root.right;
-        if(root==null || (u==null && v==null)) {
+        if(u == null && v == null) {
             return true;
         }
         q.offer(u);
